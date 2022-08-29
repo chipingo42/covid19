@@ -88,6 +88,7 @@
   left: 0;
 }
 
+
 /* circle div */
 .Cards .card_circleDiv1{
   width: 200px;
@@ -161,7 +162,7 @@
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 43px;
   color: #2B6FF3;
   position: relative;
@@ -278,8 +279,8 @@
 @media screen and (max-width: 768px) {
   .card_content {
     height: 915px;
-    width: 93%;
-    margin: 0 30px;
+    width: 94%;
+    margin: 0 21px;
   }
   .card_flexDiv {
     display: block;

@@ -1,0 +1,287 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.country_content {
+  background-color: #ffffff;
+  height: 450px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.topCountries > div:first-child {
+  width: 200px;
+  height: 200px;
+  background: rgba(243, 153, 17, 0.05);
+  border-radius: 100%;
+  position: relative;
+  bottom: 20px;
+}
+
+.topCountries > h1{
+  position: relative;
+  bottom: 180px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 31px;
+  color: #000000;
+}
+
+.btn_last_upadte {
+  position: relative;
+  bottom: 168px;
+  padding-left: 31px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #777777;
+}
+
+.countries_header {
+  position: relative;
+  bottom: 110px;
+  padding-left: 65px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
+  height: 55px;
+}
+
+.country_flex_content {
+  position: relative;
+  bottom: 190px;
+  display: flex;
+  margin: 0 31px;
+}
+
+.countries {
+  border: 1px solid #F1F4FA;
+  border-radius: 10px;
+  height: 307px;
+  width: 100%;
+}
+
+.countries_flow {
+  margin-top: 70px;
+  height: 230px;
+  overflow-y: scroll !important;
+}
+
+.countries_flow > p {
+  margin: 2px 0;
+  padding: 13px 30px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.countries_flow > p:hover {
+  background: rgba(238, 238, 238, 0.34);
+}
+
+/* countries_results */
+.countries_results {
+  margin: 0 20px;
+  width: 100%;
+}
+
+.countries_results > h1 {
+  position: relative;
+  bottom: 53px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+
+.cards {
+  position: relative;
+  bottom: 21px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.result_Total_Cases,
+.result_Active_Cases,
+.result_Recovered,
+.result_Total_Deaths,
+.result_New_Cases,
+.result_New_Deaths {
+  width: 100%;
+  height: 91px;
+  background: #FFFFFF;
+  border: 1px solid #F1F4FA;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.result_Total_Cases > p,
+.result_Active_Cases > p,
+.result_Recovered > p,
+.result_Total_Deaths > p,
+.result_New_Cases > p ,
+.result_New_Deaths > p{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #777F8D;
+  padding-top: 20px;
+}
+
+.result_Total_Cases > span {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2B6FF3;
+  position: relative;
+  top: 6px;
+}
+.result_Active_Cases > span {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #F39911;
+  position: relative;
+  top: 6px;
+}
+.result_Recovered > span {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #16B442;
+  position: relative;
+  top: 6px;
+}
+.result_Total_Deaths > span {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #D63232;
+  position: relative;
+  top: 6px;
+}
+.result_New_Cases > span {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2B6FF3;
+  position: relative;
+  top: 6px;
+}
+.result_New_Deaths > span {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #D63232;
+  position: relative;
+  top: 6px;
+}
+
+/* countries_map */
+.countries_map > img {
+  position: relative;
+  bottom: 350px;
+  width: 100%;
+  height: 900px;
+}
+
+@media screen and (max-width: 768px) {
+  .country_flex_content {
+    position: relative;
+    bottom: 190px;
+    display: flex;
+    margin: 0 20px;
+  }
+  .country_content {
+    background-color: #ffffff;
+    height: 450px;
+    width: 94%;
+    margin: 40px 20px 0px 20px;
+  }
+  .countries_results {
+    width: 100%;
+    margin-left: 40px;
+  }
+  .countries_map > img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .country_content {
+    background-color: #ffffff;
+    height: 100%;
+    width: 93%;
+    margin: 40px 13px 0px 13px;
+  }
+
+  .topCountries > div:first-child {
+    clip-path: circle();
+    height: 180px;
+    background: rgba(243, 153, 17, 0.05);
+    border-radius: 100%;
+    position: relative;
+    bottom: 10px;
+    left: -10px;
+  }
+
+  .countries_header {
+    padding-left: 40px;
+  }
+  .countries_flow > p {
+    padding: 13px 20px;
+  }
+
+  .country_flex_content {
+    position: relative;
+    bottom: 190px;
+    display: block;
+    margin: 0 20px;
+    height: 530px;
+  }
+
+  .countries_results {
+    margin: 0 0px;
+    width: 100%;
+  }
+  .countries_results > h1 {
+    position: relative;
+    top: 43px;
+  }
+
+  .cards {
+    position: relative;
+    top: 61px;
+  }
+}

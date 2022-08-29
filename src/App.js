@@ -1,8 +1,8 @@
 import React from 'react'
-import { Navbar, Card, CountryPicker } from './Components'
-
-
+import { Navbar, Card, CountryPicker, Symptom , Protect, Footer } from './Components'
 import styles from './App.module.css'
+
+
 
 function App() {
   return (
@@ -10,6 +10,9 @@ function App() {
       <Navbar />
       <Card /> 
       <CountryPicker /> 
+      <Symptom />
+      <Protect />
+      <Footer />
     </div>
   );
 }

@@ -9,6 +9,8 @@ body {
   background: #E5E5E5;
   font-family: 'Rubik';
   font-style: normal;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 
