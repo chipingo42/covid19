@@ -3,7 +3,6 @@ import { Navbar, Card, CountryPicker, Symptom , Protect, Footer } from './Compon
 import styles from './App.module.css'
 
 
-
 function App() {
   return (
     <div className={styles}>

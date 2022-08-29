@@ -11,13 +11,16 @@ const CountryPicker = () => {
 
   const [countriesPicker, setcountriesPicker] = useState([])
   const [correntIndex, setCorrentIndex] = useState(0)
+  const [date, setDate] = useState(0)
 
 
   useEffect(() => {
     axiosInstance.get(`/summary`)
     .then(res => {
       if (res.status === 200) {
-        setcountriesPicker(res?.data?.Countries)
+        setcountriesPicker(res?.data?.Countries);
+        setDate(res.data.Date)
+        
       }
       return res;
     })
@@ -35,16 +38,14 @@ const CountryPicker = () => {
         <div className={styles.topCountries}>
           <div></div>
           <h1>Top Affected Countries</h1>
-          <div className={styles.btn_last_upadte}>Last Updated: May 22, 2020</div>
+        <div className={styles.btn_last_upadte}>Last Updated: {new Date(date).toDateString()} </div>
         </div>
         <h1 className={styles.countries_header}>Countries</h1>
         <div className={styles.country_flex_content}>
           <div className={styles.countries}>
             <div className={styles.countries_flow}>
               {
-                countriesPicker?.map((country, index) => 
-                  <p key={country.slug} value={country.slug} onClick={() => setCorrentIndex(index)}>{country.Country}</p>
-                )
+                countriesPicker?.map((country, index) => <p key={country.ID} value={country.ID} onClick={() => setCorrentIndex(index)}>{country.Country}</p>)
               }
             </div>
           </div>

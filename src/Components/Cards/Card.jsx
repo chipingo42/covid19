@@ -7,14 +7,10 @@ import axiosInstance from '../../api'
 
 const Card = () => {
 
-
-
   const [TotalConfirmed, setTotalConfirmed] = useState(0)
   const [NewConfirmed, setActiveCases] = useState(0)
   const [TotalRecovered, setTotalRecovered] = useState(0)
   const [TotalDeaths, setTotalDeaths] = useState(0)
-
-
 
 
   useEffect(() => {
@@ -30,9 +26,7 @@ const Card = () => {
     })
     .catch(err => console.log(err, "data failed....!"))
   }, [])
-
-
-
+ 
 
   return (
     <>

@@ -2,12 +2,11 @@ import React from 'react'
 import styles from './Navbar.module.css'
 import logo from '../../svg/logo.svg'
 
+
 const Navbar = () => {
 
 
   const date = new Date().toDateString()
-
- 
 
   return (
     <div className={styles.content}>
