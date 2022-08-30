@@ -323,7 +323,10 @@
     top: -30px;
   }
 
-  .card_circleDiv1 > h1 {
+  .card_circleDiv1 > h1 ,
+  .card_circleDiv2 > h1 ,
+  .card_circleDiv3 > h1 ,
+  .card_circleDiv4 > h1 { 
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -333,7 +336,11 @@
     padding-top: 40px;
   }
 
-  .card_circleDiv1 > span {
+
+  .card_circleDiv1 > span ,
+  .card_circleDiv2 > span ,
+  .card_circleDiv3 > span ,
+  .card_circleDiv4 > span { 
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
