@@ -9,9 +9,9 @@ import axiosInstance from '../../api'
 
 const CountryPicker = () => {
 
-  const [countriesPicker, setcountriesPicker] = useState([])
-  const [correntIndex, setCorrentIndex] = useState(0)
-  const [date, setDate] = useState(0)
+  const [countriesPicker, setcountriesPicker] = useState([]);
+  const [correntIndex, setCorrentIndex] = useState(0);
+  const [date, setDate] = useState(0);
 
 
   useEffect(() => {
@@ -19,16 +19,12 @@ const CountryPicker = () => {
     .then(res => {
       if (res.status === 200) {
         setcountriesPicker(res?.data?.Countries);
-        setDate(res.data.Date)
-        
+        setDate(res.data.Date);
       }
       return res;
     })
     .catch(err => console.log(err, "something went wrong....!" ))
   }, [])
-
-
-
 
 
 
@@ -38,7 +34,7 @@ const CountryPicker = () => {
         <div className={styles.topCountries}>
           <div></div>
           <h1>Top Affected Countries</h1>
-        <div className={styles.btn_last_upadte}>Last Updated: {new Date(date).toDateString()} </div>
+          <div className={styles.btn_last_upadte}>Last Updated: {new Date(date).toDateString()} </div>
         </div>
         <h1 className={styles.countries_header}>Countries</h1>
         <div className={styles.country_flex_content}>
