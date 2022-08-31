@@ -38,8 +38,8 @@
   padding-left: 31px;
   font-family: 'Rubik';
   font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
+  font-weight: 300;
+  font-size: 12px;
   line-height: 15px;
   color: #777777;
 }
@@ -259,8 +259,13 @@
   .countries_header {
     padding-left: 40px;
   }
+
+  .countries {
+    margin-top: 7px;
+  }
   .countries_flow > p {
-    padding: 13px 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
   }
 
   .country_flex_content {
@@ -272,7 +277,7 @@
   }
 
   .countries_results {
-    margin: 0 0px;
+    margin: 0px 0px;
     width: 100%;
   }
   .countries_results > h1 {

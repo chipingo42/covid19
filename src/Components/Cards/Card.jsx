@@ -43,7 +43,7 @@ const Card = () => {
               <div className={styles.card_rectangelDiv1}></div>
               <div className={styles.card_circleDiv1}>
                 <h1>Total Cases</h1>
-                <span>{TotalConfirmed?TotalConfirmed : 'loading...'}</span>
+                <span>{TotalConfirmed}</span>
                 <h6>+23444</h6>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Card = () => {
               <div className={styles.card_rectangelDiv2}></div>
               <div className={styles.card_circleDiv2}>
                 <h1>Active Cases</h1>
-                <span>{NewConfirmed?NewConfirmed : 'loading...'}</span>
+                <span>{NewConfirmed}</span>
                 <h6>+23444</h6>
               </div>
             </div>
@@ -59,7 +59,7 @@ const Card = () => {
               <div className={styles.card_rectangelDiv3}></div>
               <div className={styles.card_circleDiv3}>
                 <h1>Recovered</h1>
-                <span>{TotalRecovered?TotalRecovered : 'loading...'}</span>
+                <span>{TotalRecovered}</span>
                 <h6>+23444</h6>
               </div>
             </div>
@@ -67,7 +67,7 @@ const Card = () => {
               <div className={styles.card_rectangelDiv4}></div>
               <div className={styles.card_circleDiv4}>
                 <h1>Total Deaths</h1>
-                <span>{TotalDeaths?TotalDeaths : 'loading...'}</span>
+                <span>{TotalDeaths}</span>
                 <h6>+23444</h6>
               </div>
             </div>
