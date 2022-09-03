@@ -13,6 +13,7 @@ const Card = () => {
   const [TotalDeaths, setTotalDeaths] = useState(0)
 
 
+
   useEffect(() => {
     axiosInstance.get(`/summary`) 
     .then(res => {
@@ -21,6 +22,7 @@ const Card = () => {
         setActiveCases(res?.data?.Global.NewConfirmed);
         setTotalRecovered(res?.data?.Global.TotalRecovered);
         setTotalDeaths(res?.data?.Global.TotalDeaths);
+        
       }
       return res
     })
