@@ -162,11 +162,13 @@ form > button {
 
   .footer_last {
     margin-top: 73px;
-  }
-
-  .footer_last {
     padding-left: 20px;
   }
+
+  .footer_last > p {
+    font-size: 19px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -204,6 +206,10 @@ form > button {
   }
 
   .privacy_policy {
-    padding-left: 97px;
+    padding-left: 90px;
+  }
+
+  .footer_last > p {
+    font-size: 17px;
   }
 }
