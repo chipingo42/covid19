@@ -344,7 +344,7 @@
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 43px;
     color: #2B6FF3;
     position: relative;
@@ -387,7 +387,6 @@
   .Cards .card_circleDiv3 ,
   .Cards .card_circleDiv4 { 
     width: 100%;
-    clip-path: circle();
     height: 200px;
     /* background: rgba(43, 111, 243, 0.05); */
     position: absolute;
@@ -395,7 +394,18 @@
     left: 5px;
   }
 
-  .Cards .card_circleDiv4  > span {
-    color: #D63232;
+  
+  .card_circleDiv1 > span ,
+  .card_circleDiv2 > span ,
+  .card_circleDiv3 > span ,
+  .card_circleDiv4 > span { 
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 43px;
+    color: #2B6FF3;
+    position: relative;
+    top: 20px;
   }
 }
