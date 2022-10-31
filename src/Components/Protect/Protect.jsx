@@ -24,7 +24,6 @@ const Protect = () => {
                 <div className={styles.cards}>
                   <img src={vector2} alt={vector2} />
                   <p>Don’t touch your face</p>
-                  <span>checking</span>
                 </div>
                 <div className={styles.cards}>
                   <img src={vector3} alt={vector3} />
